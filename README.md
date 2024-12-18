@@ -83,6 +83,12 @@ Once all the extra components, such as headers, were soldered, and the camera wa
 ![HandiTalkie_Completed_1](/Media_files/image6.jpg)
 
 
+![HandiTalkie_Completed_2](/Media_files/image7.jpg)
+
+
+![HandiTalkie_Completed_3](/Media_files/image8.jpg)
+
+
 
 
 
