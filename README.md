@@ -56,8 +56,16 @@ After routing and placing all the componentes, the final layout ended like this:
 ![PCB layout](/Media_files/image3.png)
 
 
+![PCB animation](/Media_files/PCB.gif)
 
 
-Once the schematic was finished, the design was sent to manufature with [JLCPCB](https://jlcpcb.com/) to have a more professional finish
+Once the schematic was finished, the design was sent to manufature with [JLCPCB](https://jlcpcb.com/) to have a more professional finish. Once the PCBs arrived, they looked like these:
+
+
+![PCB manufactured_top](/Media_files/image4.jpg) 
+
+![PCB manufactured_bottom](/Media_files/image5.jpg)
+
+
 
 
