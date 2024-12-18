@@ -47,7 +47,7 @@ As an extra, the recently created model can be tested with the file `4_test_mode
 For this to be a more complete proyect, the main idea was to create a whole embedded system, that is why a PCB customized was design. The schematich used to was primarlay compound of an audio amplifier [LM386](https://www.ti.com/lit/ds/symlink/lm386.pdf) (Class A-B audio amplifier). Additionally, some LEDs and push bottons were allocated in the PCB to add extra functionalities, as well as an audio jack 3.5mm femal, and a USB type-C port for power input. The schematic was designed on the free CAD software, from the PCB manufacturer JLCPCB, [EasyEDA](https://easyeda.com/).
 
 
-![Schematic for the Audio HAT](/Media_files/image2.png)
+![Schematic for the Audio HAT](/Media_files/imagen_redimensionada.png)
 
 
 After routing and placing all the componentes, the final layout ended like this:
