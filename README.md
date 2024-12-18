@@ -67,5 +67,24 @@ Once the schematic was finished, the design was sent to manufature with [JLCPCB]
 ![PCB manufactured_bottom](/Media_files/image5.jpg)
 
 
+### Special elements
+
+In order to connect the HAT with the raspberry, a [USB to 3.5mm Jack Audio Adapter](https://amzn.eu/d/fj7LUFb) and a [jack 3.5mm male-male](https://amzn.eu/d/7yTrx6h) were used to extract the audio.
+
+
+## Setting the hardware
+
+For this project, the [module 3 camera](https://www.raspberrypi.com/products/camera-module-3/) was used in the [raspberry pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
+
+Once all the extra components, such as headers, were soldered, and the camera was installed, the project looked can look like this:
+
+
+![HandiTalkie_completed_1](/Media_files/image6.jpg)
+
+
+
+
+
+
 
 
