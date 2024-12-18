@@ -40,7 +40,7 @@ Once the data has been extracted, the model is created with the script `3_train_
 As an extra, the recently created model can be tested with the file `4_test_model.py`
 
 ![Random Forest model Test](/Media_files/image1.png)
-<img src="/Media_files/image1.png" width="48">
+
 
 
 
