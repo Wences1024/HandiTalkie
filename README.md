@@ -2,55 +2,82 @@
 
 #### Description
 
-Amazing proyect that combines machine learning, Raspberry Pi, and more!!!. This project is A sign language interpreter that uses machine learning in a Raspberry Pi to capture hand gestures through a camera and convert them into speech.
+HandiTalkie is an innovative project that combines machine learning, Raspberry Pi, and embedded systems to create a sign language interpreter. Using a camera, the system captures hand gestures, predicts corresponding alphabet letters, and converts them into speech.
 
 
 ## Building process
-First it is necessary to create the model that the raspberry will use to predict any character from the alphabet. This task can be done on a normal windows computer.
+To get started, you first need to create the machine learning model that will be used by the Raspberry Pi to predict hand gestures. This process is done on a computer (e.g., Windows).
 
 ### Dependencies
-Before running any script to create the model, the dependencies needed are:
+Install the following Python libraries before running any scripts:
 
-Some basic Git commands are:
+
 ```
-pip install mediapipe
-pip install opencv-python
-pip install elevenlabs
-pip install scikit-learn
+pip install mediapipe opencv-python elevenlabs scikit-learn
 ```
+- `mediapipe` : Hand gesture recognition.
+- `opencv-python`: Computer vision tasks.
+- `elevenlabs`: Text-to-speech conversion.
+- `scikit-learn`: Model training.
 
-`mediapipe` is for hand gesture recognition, `opencv-python` for computer vision tasks, `elevenlabs` for audio control (text-to-chat), and`scikit-learn` for training the hand gesture model. All the nessary scripts are located in the `Classifier_files` folder.
+The necessary scripts are in the `Classifier_files` folder.
 
-To make the model that predicts the sign languge, first the pictures of the hands need to be collected. The more pictures are analized the better. For this project, 500 pictures of each sing-language letter were taken from the hand. To do this, the run the script `1_collect_imgs.py`. As a suggestion, you can create a virtual environment for this part; just type on a terminal in your main folder:
+
+
+### Steps to Create the Model
+1. Collect Hand Gesture Images
+Run `1_collect_imgs.py` script to capture images of hand gestures. It is recommended to collect at least 500 images per sign language letter for better accuracy.
+
+*Optional:* Use a virtual environment to isolate dependencies:
 
 ```
 python -m venv name_of_the_enviroment
 
-Example:
+#Example:
 python -m venv venv
 
-Access the enviroment:
+#Access the enviroment:
 source venv/Scripts/activate
 ```
 
-After the images are collected, the information extraction regarding key-points on the hand is the next target. The script `2_create_dataset.py`. That file will output a `data_for_training.pickle` file. 
-Once the data has been extracted, the model is created with the script `3_train_classifier.py`. This script will output `model_for_training.p` file, which is the one that is going to be used to predict the words from the alphabet and make words!
+2. Extract Key Points
 
-#### Testing the model
-As an extra, the recently created model can be tested with the file `4_test_model.py`
+Use the `2_create_dataset.py` script to extract hand key points and generate the `data_for_training.pickle` file.
+
+3. Train the Model
+
+Train the model by running the `3_train_classifier.py` script. This outputs the `model_for_training.p` file, which is used for predictions.
+
+4. Test the Model (Optional)
+
+Test the trained model using `4_test_model.py`.
+
+Example output:
 
 ![Random Forest model Test](/Media_files/image1.png)
 
 
 ## Audio HAT
+To enhance the project, a custom multi-layer PCB was designed to create an embedded system. The PCB includes:
 
-For this to be a more complete proyect, the main idea was to create a whole embedded system, that is why a PCB customized was design. The schematich used to was primarlay compound of an audio amplifier [LM386](https://www.ti.com/lit/ds/symlink/lm386.pdf) (5V Class A-B audio amplifier). Additionally, some LEDs and push bottons were allocated in the PCB to add extra functionalities, as well as an audio jack 3.5mm femal, and a USB type-C port for power input. The schematic was designed on the free CAD software, from the PCB manufacturer JLCPCB, [EasyEDA](https://easyeda.com/).
+- Class A-B Audio amplifier ([LM386](https://www.ti.com/lit/ds/symlink/lm386.pdf)).
 
+- LEDs and push buttons for additional functionalities.
+
+- A 3.5mm audio jack and USB-C port for power input.
+
+- Dedicated layers for power and signals
+
+
+The schematic was created using [EasyEDA](https://easyeda.com/).
+
+
+#### Schematic
 
 ![Schematic for the Audio HAT](/Media_files/image2.png)
 
 
-After routing and placing all the componentes, the final layout ended like this:
+#### PCB Layout
 
 
 ![PCB layout](/Media_files/image3.png)
@@ -59,24 +86,29 @@ After routing and placing all the componentes, the final layout ended like this:
 ![PCB animation](/Media_files/PCB.gif)
 
 
-Once the schematic was finished, the design was sent to manufature with [JLCPCB](https://jlcpcb.com/) to have a more professional finish. Once the PCBs arrived, they looked like these:
 
+Once manufactured with [JLCPCB](https://jlcpcb.com/), the PCBs looked like this:
 
 ![PCB manufactured_top](/Media_files/image4.jpg) 
 
 ![PCB manufactured_bottom](/Media_files/image5.jpg)
 
 
-### Special elements
+### Required Accessories
 
-In order to connect the HAT with the raspberry, a [USB to 3.5mm Jack Audio Adapter](https://amzn.eu/d/fj7LUFb) and a [jack 3.5mm male-male](https://amzn.eu/d/7yTrx6h) were used to extract the audio.
+- [USB to 3.5mm Audio Adapter](https://amzn.eu/d/fj7LUFb)
+- 3[.5mm Male-to-Male Audio Cable](https://amzn.eu/d/7yTrx6h)
 
 
-## Setting the hardware
+## Setting Up the Hardware
 
-For this project, the [module 3 camera](https://www.raspberrypi.com/products/camera-module-3/) was used in the [raspberry pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
+This project uses:
 
-Once all the extra components, such as headers, were soldered, and the camera was installed, the project looked can look like this:
+- [Camera Module 3](https://www.raspberrypi.com/products/camera-module-3/)
+- [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
+
+
+After soldering the components and connecting the camera, the project looks like this
 
 
 
@@ -91,76 +123,51 @@ Once all the extra components, such as headers, were soldered, and the camera wa
 
 
 ## Programming the Raspberry
+### Steps to prepare the Raspberry Pi
 
-Once all the hardware is ready and the raspberry is powered and ready, the next actions are requiered:
 
-1. In our main folder, we create a virtual environment. This is important because you can get compatibility issues with the camera and other functions. Following the commnads:
+1. Create and Activate a Virtual Environment
 
 ```
 #Create a virtual environment
 python3 -m venv --system-site-packages new_env
-```
 
-2. Activate your virtual enviroment
-
-```
 #Activate the new environment
 source new_env/bin/activate
 ```
 
-3. Updatethe raspberry
+2. Update and Install Dependencies
 
 ```
-#Update pip
-pip install --upgrade pip
-#Updte the hardware
 sudo apt-get update
-```
-
-4. Install all the necessary libraries
-
-```
-#Install mediapipe
-pip install mediapipe
-
-#Install OpenCV
-pip install opencv-python
-
-#Install ElevenLabs
-pip install elevenlabs
-
-#Install scikit-learn to use the model and open it with pickle
-pip install scikit-learn
-
-#Sound libreries
+pip install --upgrade pip
+pip install mediapipe opencv-python elevenlabs scikit-learn
 sudo apt-get install libasound2-dev
 pip install pyalsaaudio
 ```
 
-5. Now it is time to set the audio output from the Raspberry. This has to come out from the USB port in case it is connected!
-
-The first thing to do is connect the USB adapter to the raspberry and then check the USB port we connected to. Once we have the port number, we modify the ALSA file (Responsable for the sound settings in the raspberry)
+3. Configure Audio Output
+- Connect the USB adapter to the Raspberry Pi.
+- Identify the USB port:
 
 ```
-#Once the adapter connected, check the port connection number
 aplay -l
 ```
-
+- Edit the ALSA configuration file:
 ```
-#Edit ALSA file:
 sudo nano /usr/share/alsa/alsa.conf
 ```
 
-Then we look for the lines:
+Look for the lines:
 
 ```
 defaults.ctl.card 0
 defaults.pcm.card 0
 ```
 
-And replace "0" with our USB connection number
+And replace "0" with your USB port number
 
-Once we changed that, we need to make sure that in case no USB device is connected, the audio can have the default value. To do so, in the same file, we add at the end:
+- Add at the end of the file:
 
 ```
 pcm.!default {
@@ -188,6 +195,10 @@ ctl.!default {
     }
 }
 ```
+In case no adapter is connected!
+
+
+- Save and Reboot:
 
 After that, we exit the file `Ctrl+X`, then `Y`, and finaly press `Enter`
 
@@ -196,20 +207,15 @@ Then we proceed to reboot the raspberry:
 sudo reboot
 ```
 
-
-
-## Start making some "Sign language" 
-
-Now is time to play with the raspberry and our hands!!! Get into the virtual enviroment and run the script!!!
-
-
-The main script (`sign_language_RB.py`) comes with different resolutions, and voice selection!, Don't forget to specify them in the terminal when executing, otherwise you'll get default values, such as the resolution at 1280x720 and "Janet" as a voice.
+## Running the Program 
+Run the main script `sign_language_RB.py`. You can specify resolution and voice settings using command-line arguments.
 
 ```
-python sign_language_RB.py --resolution [value_for_resolution] --voice [value_for_voice]
+python sign_language_RB.py --resolution [value] --voice [value]
 ```
 
-### Posible values for voice and resolution
+### Available Options
+
 #### Voice
 
 | Input | Voice | 
@@ -245,5 +251,5 @@ When the buttons are pressed, here is what happens:
 | `B3 and B4`   | End the script  | 
 
 
-
-
+## Video Test
+![Video_short](/Media_files/Final_video.mp4)
