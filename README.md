@@ -50,3 +50,14 @@ For this to be a more complete proyect, the main idea was to create a whole embe
 ![Schematic for the Audio HAT](/Media_files/image2.png)
 
 
+After routing and placing all the componentes, the final layout ended like this:
+
+
+![PCB layout](/Media_files/image3.png)
+
+
+
+
+Once the schematic was finished, the design was sent to manufature with [JLCPCB](https://jlcpcb.com/) to have a more professional finish
+
+
