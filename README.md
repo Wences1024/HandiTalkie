@@ -252,10 +252,8 @@ When the buttons are pressed, here is what happens:
 
 
 ## Demo
-Here's a demonstration of HandiTalkie in action:
-
 <video width="50%" controls>
-  <source src="https://raw.githubusercontent.com/Wences1024/HandiTalkie/main/Media_files/HandiTalkie.mp4" type="video/mp4">
+  <source src="https://drive.google.com/file/d/1ZsCAE8BdoFo-KcmjtEL_0qf92XkF0BYN/view?usp=sharing" type="video/mp4">
 </video>
 
 
