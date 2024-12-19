@@ -254,7 +254,10 @@ When the buttons are pressed, here is what happens:
 ## Demo
 Here's a demonstration of HandiTalkie in action:
 
-https://github.com/Wences1024/HandiTalkie/raw/main/Media_files/HandiTalkie.mp4
+<video width="40%" controls>
+  <source src="https://raw.githubusercontent.com/Wences1024/HandiTalkie/main/Media_files/HandiTalkie.mp4" type="video/mp4">
+</video>
+
 
 ### Important things to remember:
 - Create an account for [elevenlabs](https://elevenlabs.io/)
