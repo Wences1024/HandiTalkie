@@ -97,7 +97,7 @@ Once manufactured with [JLCPCB](https://jlcpcb.com/), the PCBs looked like this:
 ### Required Accessories
 
 - [USB to 3.5mm Audio Adapter](https://amzn.eu/d/fj7LUFb)
-- 3[.5mm Male-to-Male Audio Cable](https://amzn.eu/d/7yTrx6h)
+- [3.5mm Male-to-Male Audio Cable](https://amzn.eu/d/7yTrx6h)
 
 
 ## Setting Up the Hardware
@@ -251,5 +251,12 @@ When the buttons are pressed, here is what happens:
 | `B3 and B4`   | End the script  | 
 
 
-## Video Test
-![Video_short](/Media_files/Final_video.mp4)
+## Demo
+Here's a demonstration of HandiTalkie in action:
+
+<video width="40%" controls>
+  <source src="Media_files/HandiTalkie.mp4" type="video/mp4">
+</video>
+
+### Important things to remember:
+- Create an account for [elevenlabs](https://elevenlabs.io/)
