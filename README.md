@@ -74,24 +74,22 @@ The schematic was created using [EasyEDA](https://easyeda.com/).
 
 #### Schematic
 
-![Schematic for the Audio HAT](/Media_files/image2.png)
+![Schematic for the Audio HAT](https://github.com/user-attachments/assets/edfc8ad7-3bc4-4b14-a1c8-cc8b0156b9cc)
 
 
 #### PCB Layout
 
+![PCB layout](https://github.com/user-attachments/assets/258f0326-8695-4deb-bc0f-7f2a34fd0261)
 
-![PCB layout](/Media_files/image3.png)
-
-
-![PCB animation](/Media_files/PCB.gif)
+![PCB animation](https://github.com/user-attachments/assets/2a737406-d4a2-4c48-bb90-019e5d099c6d)
 
 
 
 Once manufactured with [JLCPCB](https://jlcpcb.com/), the PCBs looked like this:
 
-![PCB manufactured_top](/Media_files/image4.jpg) 
+![PCB manufactured_top](https://github.com/user-attachments/assets/2fcb5e07-763e-4792-9032-2875868cf2ef)
 
-![PCB manufactured_bottom](/Media_files/image5.jpg)
+![PCB manufactured_bottom](https://github.com/user-attachments/assets/f4118209-b04c-4f7c-b60f-9107d7a860ee)
 
 
 ### Required Accessories
@@ -112,13 +110,11 @@ After soldering the components and connecting the camera, the project looks like
 
 
 
-![HandiTalkie_Completed_1](/Media_files/image6.jpg)
+![HandiTalkie_Completed_1](https://github.com/user-attachments/assets/b96fb576-4309-4838-8af4-14a3eecfbba1)
 
+![HandiTalkie_Completed_2](https://github.com/user-attachments/assets/ebcaa2fb-4058-4504-a915-06c6099c860d)
 
-![HandiTalkie_Completed_2](/Media_files/image7.jpg)
-
-
-![HandiTalkie_Completed_3](/Media_files/image8.jpg)
+![HandiTalkie_Completed_3](https://github.com/user-attachments/assets/506462f0-27a0-4c6c-90fa-12be662a5716)
 
 
 
