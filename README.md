@@ -252,10 +252,7 @@ When the buttons are pressed, here is what happens:
 
 
 ## Demo
-<video width="50%" controls>
-  <source src="Media_files/HandiTalkie.mp4" type="video/mp4">
-</video>
-
+https://github.com/user-attachments/assets/3698a3da-cb71-4627-aeec-b014aaf791c3
 
 
 ### Important things to remember:
