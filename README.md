@@ -259,4 +259,5 @@ When the buttons are pressed, here is what happens:
 
 
 ### Important things to remember:
-- Create an account for [elevenlabs](https://elevenlabs.io/)
+- Create an account for [elevenlabs](https://elevenlabs.io/). It's free and you can get a Key
+- In the main file, don't forget to put your Key from elevenlabs account
