@@ -54,7 +54,7 @@ Test the trained model using `4_test_model.py`.
 
 Example output:
 
-![Random Forest model Test](/Media_files/image1.png)
+![Random Forest model Test](https://github.com/user-attachments/assets/8229a960-82b4-44cc-8a49-41b9c70696e2)
 
 
 ## Audio HAT
