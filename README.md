@@ -251,6 +251,18 @@ When the buttons are pressed, here is what happens:
 https://github.com/user-attachments/assets/3698a3da-cb71-4627-aeec-b014aaf791c3
 
 
-### Important things to remember:
-- Create an account for [elevenlabs](https://elevenlabs.io/). It's free and you can get a Key
-- In the main file, don't forget to put your Key from elevenlabs account
+### Important Notes:
+- The sign language used in this project is Mexican Sign Language, but you can create your own dataset and use any sign language!
+- Create an account for [elevenlabs](https://elevenlabs.io/) to obtain an API Key.
+- In the main file, remember to input your ElevenLabs API Key.
+- For more details, visit [ElevenLabs Documentation](https://elevenlabs.io/docs/developer-guides/how-to-use-tts-with-streaming).
+
+
+
+## Possible Improvements
+
+- **Audio Enhancement**: Upgrading to a Class-D amplifier can significantly improve the audio experience.
+- **PCB Improvements**: Add a filter to route audio through one of the GPIO pins, eliminating the need for a USB adapter and 3.5mm audio cable.
+- **Sign Language Selector**: Include a feature to select the sign language to be interpreted.
+- **Machine Learning Model**: Enhance the model to incorporate full words instead of processing letter by letter.
+- **User-Friendly Buttons**: Replace the current buttons with more ergonomic options to improve user experience.

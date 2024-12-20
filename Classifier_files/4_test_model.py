@@ -37,7 +37,7 @@ labels_dict = {0:'A',
                11:'L',
                12:'M',
                13:'N',
-               14:'�',
+               14:'ñ',
                15:'O',
                16:'P',
                17:'Q',
@@ -93,7 +93,8 @@ while True:
                
     
     cv2.imshow("frame",frame)
-    cv2.waitKey(1)
+    if cv2.waitKey(1) & 0xFF == 27:
+        break
     
     
 
